@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  reactjs:
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/reactjs:0.0.2
+    container_name: reactjs
+    ports:
+    - "3000:3000"
+    depends_on:
+    - asp.net
+  asp.net:
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/asp.net:0.0.7
+    container_name: asp.net
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
