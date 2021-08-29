@@ -7,7 +7,6 @@ COPY *.csproj ./
 RUN dotnet restore
 COPY . .
 RUN dotnet build -c Release
-
 FROM build AS publish
 RUN dotnet publish -c Release -o /publish
 FROM base AS final
