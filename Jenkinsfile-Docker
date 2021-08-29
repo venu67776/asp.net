@@ -1,0 +1,6 @@
+@Library('todo') _
+
+docker (
+        COMPONENT             : 'asp.net',
+        PROJECT_NAME          : "todo"
+)
