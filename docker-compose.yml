@@ -10,6 +10,8 @@ services:
   asp.net:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/asp.net:0.0.8
     container_name: asp.net
+    ports:
+    - "5000:5000"
 
   mysql:
     image: mysql:5.7
