@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   reactjs:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/reactjs:0.0.2
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/reactjs:0.0.4
     container_name: reactjs
     ports:
     - "3000:3000"
